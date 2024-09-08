@@ -82,27 +82,24 @@ firebase_admin.initialize_app(cred {     'storageBucket': 'YOUR FIREBASE PROJECT
 
 <p>17. Open your profile readme.md by creating a repository with your GitHub username if you dont have already.</p>
 
-<p>20. Go to your Firebase project.</p>
+<p>18. Go to your Firebase project.</p>
 
-<p>21. Click the Storage tab.</p>
+<p>19. Click the Storage tab.</p>
 
-<p>22. Click on listening-on-ytmusic.svg file and click name then copy the url to your svg file.</p>
+<p>20. Click on listening-on-ytmusic.svg file and click name then copy the url to your svg file.</p>
 
-<p>23. Paste the text below to your profile's readme.md file:</p>
-
-```
-#
-```
+<p>21. Paste the text below to your profile's readme.md file:</p>
 
 ```
+  #
   ![What Am I Listening](your-copied-images-url)
 ```
 
-<p>25. After you complete editing your readme.md file save it and go to your profile's repository.</p>
+<p>22. After you complete editing your readme.md file save it and go to your profile's repository.</p>
 
-<p>26. Create a new file named update-readme.yaml into your .github/workflows folder.</p>
+<p>23. Create a new file named update-readme.yaml into your .github/workflows folder.</p>
 
-<p>27. Paste the code below:</p>
+<p>24. Paste the code below:</p>
 
 ```
 name: Update SVG Version
@@ -148,29 +145,29 @@ jobs:
         branch: main
 ```
 
-<p>28. Then save it and go to your GitHub settings.</p>
+<p>25. Then save it and go to your GitHub settings.</p>
 
-<p>32. Scroll and click Developer Settings.</p>
+<p>26. Scroll and click Developer Settings.</p>
 
-<p>33. Click Personal Acces Tokens and choose Tokens(classic).</p>
+<p>27. Click Personal Acces Tokens and choose Tokens(classic).</p>
 
-<p>34. Create a token gave acces to all and name whatever you want.</p>
+<p>28. Create a token gave acces to all and name whatever you want.</p>
 
-<p>35. Copy your token.</p>
+<p>29. Copy your token.</p>
 
-<p>36. Never share your token.</p>
+<p>30. Never share your token.</p>
 
-<p>37. Go to settings in your profile's repository where readme.md file located.</p>
+<p>31. Go to settings in your profile's repository where readme.md file located.</p>
 
-<p>38. Click secrets and variables.</p>
+<p>32. Click secrets and variables.</p>
 
-<p>39. Go to Actions tab.</p>
+<p>33. Go to Actions tab.</p>
 
-<p>40. Create a new repository secret named GH_TOKEN.</p>
+<p>34. Create a new repository secret named GH_TOKEN.</p>
 
-<p>41. Paste your token to your repository secret named GH_TOKEN.</p>
+<p>35. Paste your token to your repository secret named GH_TOKEN.</p>
 
-<p>42. Save and its all done now.</p>
+<p>36. Save and its all done now.</p>
 
 <h2>🍰 Contribution Guidelines:</h2>
 
