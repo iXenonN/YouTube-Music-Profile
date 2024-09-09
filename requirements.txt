@@ -1,0 +1,10 @@
+colorthief==0.2.1
+firebase-admin==6.5.0
+Flask==3.0.3
+flask-cors==4.0.1
+lxml==5.3.0
+numpy==1.26.4
+pillow==10.4.0
+pybase64==1.4.0
+requests==2.32.3
+ytmusicapi==1.8.0
