@@ -204,7 +204,7 @@ Thank you for considering contributing to this project! To ensure a smooth and e
 2. **Clone the Repository**
    - Clone your forked repository to your local machine:
      ```bash
-     git clone https://github.com/your-username/repository-name.git
+     git clone https://github.com/iXenonN/YouTube-Music-Profile.git
      ```
 
 3. **Create a Branch**
