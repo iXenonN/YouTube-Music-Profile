@@ -193,7 +193,66 @@ Here're some of the project's best features:
     - Double click on app.py.
     
     - If you have completed all these steps successfully the code should work.
+  
 
+## 🚧 Troubleshooting & Common Issues
+
+### ❌ Issue: `ModuleNotFoundError: No module named 'some_module'`
+**Cause:** This error occurs when the required Python package is not installed.
+
+**Solution:** Ensure that all dependencies are installed correctly by running:
+
+```
+pip install -r requirements.txt
+
+```
+
+### ❌ Issue: `FileNotFoundError: [Errno 2] No such file or directory: 'oauth.json'`
+**Cause:** This error occurs when the project cannot find the oauth.json file in the expected directory (It can be ).
+
+**Solution:** Make sure that oauth.json exists in the project's root directory. If it's missing, you can create with the command below (This error may also apply to your firebase-sdk.json. If you see this error message, it is useful to check your firebase-sdk.json path as well.):
+    ```
+    ytmusicapi oauth
+    ```
+
+### ❌ Issue: `'ytmusicapi' is not recognized as an internal or external command, operable program or batch file.`
+**Cause:** This error occurs when your system cant see the ytmusicapi library (i think).
+
+**Solution:** For me i use windows 11 and i had this issue too but luckily i had a linux installed virtual machine and i executed this command from linux and it worked, so you can try a diffrent operating system.
+
+
+### ❌ Issue: `google.api_core.exceptions.NotFound: 404 POST [LINK]`
+**Cause:** This error occurs when your firebase_admin.initialize_app(cred{'storageBucket': '' }) url is wrong.
+
+**Solution:** Check your firebase project url again and make sure its the right url it should look like this:
+    ```
+    your-project-name.appspot.com
+    ```
+    
+### ❌ Issue: `TimeoutError: [Errno 110] Connection timed out`
+**Cause:** This error occurs when a network request takes too long to complete, often due to poor network connectivity or an unresponsive server.
+
+**Solution:** Check your network connection and ensure that the server you are trying to reach is online. You may also increase the timeout limit in your request:
+    ```
+        response = requests.get(image_url, timeout=10)
+    ```
+    and:
+    ```
+        response = requests.get(thumbnail_url, timeout=10)
+    ```
+    
+### ❌ Issue: `CORS policy: No 'Access-Control-Allow-Origin' header is present.`
+**Cause:** This error occurs when your Flask server does not allow cross-origin requests.
+
+**Solution:** Ensure that flask-cors is installed and properly configured in your Flask application. You can add the following lines to your app.py:
+    ```
+        from flask_cors import CORS
+        app = Flask(__name__)
+        CORS(app)
+    ```
+
+### 📧 Still Having Issues?
+If you're still experiencing issues after trying these solutions, feel free to open an issue or contact me directly via email. [![Gmail](https://img.shields.io/badge/alikeremergen13%40gmail.com-grey?logo=Gmail)
 
 <h2>🍰 Contribution Guidelines:</h2>
 
