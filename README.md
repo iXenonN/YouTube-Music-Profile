@@ -145,7 +145,7 @@ Here're some of the project's best features:
     
     - Create a new repository secret name anything you want.
     
-    - Paste your token to your repository secret named GH_TOKEN.
+    - Paste your token to your repository secret you created.
     
     - Save and its all done now.
 
