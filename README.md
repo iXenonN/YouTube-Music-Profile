@@ -327,7 +327,7 @@ Thank you for contributing! Your help is appreciated.
           CORS(app)
       ```
 
-### ❌ Issue: UI not changing
+### ❌ Issue: `UI not changing`
   - **Cause:** i really dont know why this happens but i think GitHub's 5k rate limit causes this.
   
   - **Solution:** Just go to the actions tab in your profile's repository and then run the update-readme.yaml that will fix the issue and sometimes ctrl + f5 solves too.
