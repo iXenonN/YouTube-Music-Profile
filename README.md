@@ -2,14 +2,14 @@
 
 <p id="description">This project displays the song you are currently listening to on YouTube Music in real-time on your GitHub profile.</p>
 
+## Inspired From:
+  - • kittinan [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/kittinan) 
+  - • natemoo-re [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/natemoo-re) 
+  - • Thanks to sigma67 [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/sigma67)  for creating the unoffical YouTube Music api.
+
 <p align="center"><img src="https://img.shields.io/badge/Currently-Working-brightgreen" alt="shields">  <img src="https://img.shields.io/badge/Version-1.1-blue" alt="shields"></p>
 
-⬤ Inspired From: <br>
-• kittinan [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/kittinan) <br>
-• natemoo-re [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/natemoo-re) <br>
-• Thanks to sigma67 [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/sigma67)  for creating the unoffical YouTube Music api.<br>
 
-  
   
 <h2>🧐 Features</h2>
 
