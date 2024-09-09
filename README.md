@@ -16,104 +16,130 @@ Here're some of the project's best features:
 
 <h2>🛠️ Installation Steps:</h2>
 
-##Clonning Project##
+1. **Clonning Project**
 
-  <p>1. Clone the project.</p>
+  - Clone the project.
 
   ```
   git clone https://github.com/iXenonN/YouTube-Music-Profile.git
   ```
 
-  <p>2. Find the cloned project file in local.</p>
+  - Find the cloned project file in local.
 
   ```
   cd YouTube-Music-Profile
   ```
-**Editing ytmusicapi credentials and Installing libraries**
+2. **Editing ytmusicapi credentials and Installing libraries**
 
-  <p>3. Open app.py with your favorite Python IDE.</p>
+  - Open app.py with your favorite Python IDE.
   
-  <p>4. Install the YouTube Music api. (thanks to sigma67 for creating this api)</p>
+  - Install the YouTube Music api. (thanks to sigma67 for creating this api)
   
   ```
   pip install ytmusicapi
   ```
   
-  <p>5. Generate oauth.json for ytmusicapi.</p>
+  - Generate oauth.json for ytmusicapi.
   
   ```
   ytmusicapi oauth
   ```
-  <p>11. In the code change the 'YOUR OAUTH.JSON FILE' with your oauth.json file.</p>
+  - In the code change the 'YOUR OAUTH.JSON FILE' with your oauth.json file.
   
   ```
   ytmusic = YTMusic('YOUR OAUTH.JSON FILE')
   ```
     
-  <p>6. In the cloned file install requirements.txt.</p>
+  - In the cloned file install requirements.txt.
 
   ```
   pip install -r requirements.txt
   ```
-**Firebase Project**
 
-  <p>7. Create a new project in Firebase.</p>
+3. **Firebase Project**
+
+   - Create a new project in Firebase.
   
-  <p>8. Download your project's Firebase Admin SDK as node.js.</p>
+   - Download your project's Firebase Admin SDK as node.js.
   
-  <p>9. Copy your Firebase project url.</p>
+   - Copy your Firebase project url.
 
-**Chrome Extension**
+4. **Editing Code With Firebase Credentials**
 
-  <p>10. Install my chrome extension for checking the YouTube Music background status.</p>
-
-
-**Editing Code With Firebase Credentials**
-
-  <p>12. Change the 'YOUR FIREBASE CRED JSON FILE' with your firebase admin sdk json file.</p>
+  - Change the 'YOUR FIREBASE CRED JSON FILE' with your firebase admin sdk json file.
   
   ```
   cred = credentials.Certificate('YOUR FIREBASE CRED JSON FILE')
   ```
   
-  <p>13. Paste your firebase project url to the 'YOUR FIREBASE PROJECT URL'.</p>
+  - Paste your firebase project url to the 'YOUR FIREBASE PROJECT URL'.
   
   ```
-  firebase_admin.initialize_app(cred {     'storageBucket': 'YOUR FIREBASE PROJECT URL' })
+  firebase_admin.initialize_app(cred {
+      'storageBucket': 'YOUR FIREBASE PROJECT URL'
+  })
   ```
   
-  <p>14. Save and exit app.py.</p>
+  - Save and exit app.py.
 
-**Run the code**
+5. **Chrome Extension**
 
-  <p>15. Double click on app.py.</p>
-  
-  <p>16. If you have completed all these steps successfully the code should work.</p>
+  - Install my chrome extension for checking the YouTube Music background status.
 
-**GitHub README.md modify**
+  ```
+  Extension Link
+  ```
 
-  <p>17. Open your profile readme.md by creating a repository with your GitHub username if you dont have already.</p>
+6. **GitHub README.md modify**
+
+  - Open your profile readme.md by creating a repository with your GitHub username if you dont have already.
   
-  <p>18. Go to your Firebase project.</p>
+  - Go to your Firebase project.
   
-  <p>19. Click the Storage tab.</p>
+  - Click the Storage tab.
   
-  <p>20. Click on listening-on-ytmusic.svg file and click name then copy the url to your svg file.</p>
+  - Click on listening-on-ytmusic.svg file and click name then copy the url to your svg file.
   
-  <p>21. Paste the text below to your profile's readme.md file and save:</p>
+  - Paste the text below to your profile's readme.md file and save:
 
   ```
     #
     ![What Am I Listening](your-copied-images-url)
   ```
 
-**Automate with GitHub Actions**
+7. **Creating the token for update-readme.yaml file**
 
-  <p>22. After you complete editing your readme.md file save it and go to your profile's repository.</p>
+  - Go to your GitHub settings.
   
-  <p>23. Create a new file named update-readme.yaml into your .github/workflows folder.</p>
+  - Scroll and click Developer Settings.
   
-  <p>24. Paste the code below:</p>
+  - Click Personal Acces Tokens and choose Tokens(classic).
+  
+  - Create a token gave acces to all and name whatever you want.
+  
+  - Copy your token.
+  
+  # Never share your token
+
+  - Go to settings in your profile's repository where readme.md file located.
+  
+  - Click secrets and variables.
+  
+  - Go to Actions tab.
+  
+  - Create a new repository secret named GH_TOKEN.
+  
+  - Paste your token to your repository secret named GH_TOKEN.
+  
+  - Save and its all done now.
+
+8. **Automate with GitHub Actions**
+
+  - After you complete editing your readme.md file save it and go to your profile's repository.
+  
+  - Create a new file named update-readme.yaml into your .github/workflows folder.
+  
+  - Paste the code below:
   
   ```
   name: Update SVG Version
@@ -159,31 +185,12 @@ Here're some of the project's best features:
           branch: main
   ```
 
-**Creating the token for update-readme.yaml file**
+9. **Run the code**
 
-  <p>25. Go to your GitHub settings.</p>
+  - Double click on app.py.
   
-  <p>26. Scroll and click Developer Settings.</p>
-  
-  <p>27. Click Personal Acces Tokens and choose Tokens(classic).</p>
-  
-  <p>28. Create a token gave acces to all and name whatever you want.</p>
-  
-  <p>29. Copy your token.</p>
-  
-  # Never share your token
+  - If you have completed all these steps successfully the code should work.
 
-  <p>31. Go to settings in your profile's repository where readme.md file located.</p>
-  
-  <p>32. Click secrets and variables.</p>
-  
-  <p>33. Go to Actions tab.</p>
-  
-  <p>34. Create a new repository secret named GH_TOKEN.</p>
-  
-  <p>35. Paste your token to your repository secret named GH_TOKEN.</p>
-  
-  <p>36. Save and its all done now.</p>
 
 <h2>🍰 Contribution Guidelines:</h2>
 
