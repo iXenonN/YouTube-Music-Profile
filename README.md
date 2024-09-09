@@ -100,7 +100,7 @@ Here're some of the project's best features:
 
 5. **Chrome Extension**
 
-    - Install my chrome extension for checking the YouTube Music background status.
+    - Install the "YouTube Music Check" chrome extension for checking the YouTube Music background status.
   
     ```
     Extension Link
