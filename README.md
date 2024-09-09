@@ -327,6 +327,12 @@ Thank you for contributing! Your help is appreciated.
           CORS(app)
       ```
 
+### ❌ Issue: UI not changing
+  - **Cause:** i really dont know why this happens but i think githubs 5k data transfer limit can cause.
+  
+  - **Solution:** Just go to the actions tab in your profile's repository and then run the update-readme.yaml that will fix the issue and sometimes ctrl + f5 solves too.
+
+
 ## 📧 Still Having Issues?
   - If you're still experiencing issues after trying these solutions, feel free to open an issue or contact me directly via email. ![Gmail](https://img.shields.io/badge/alikeremergen13%40gmail.com-grey?logo=Gmail)
   
