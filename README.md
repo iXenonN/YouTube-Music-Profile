@@ -143,7 +143,7 @@ Here're some of the project's best features:
     
     - Go to Actions tab.
     
-    - Create a new repository secret named GH_TOKEN.
+    - Create a new repository secret name anything you want.
     
     - Paste your token to your repository secret named GH_TOKEN.
     
@@ -197,7 +197,7 @@ Here're some of the project's best features:
         - name: Push Changes
           uses: ad-m/github-push-action@v0.6.0
           with:
-            github_token: ${{ secrets.GH_TOKEN }}
+            github_token: ${{ secrets.YOUR_GITHUB_TOKEN_SECRET_NAME }}
             branch: main
     ```
 
