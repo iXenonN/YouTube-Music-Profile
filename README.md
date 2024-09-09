@@ -18,178 +18,178 @@ Here're some of the project's best features:
 
 1. **Clonning Project**
 
-  - Clone the project.
-
-  ```
-  git clone https://github.com/iXenonN/YouTube-Music-Profile.git
-  ```
-
-  - Find the cloned project file in local.
-
-  ```
-  cd YouTube-Music-Profile
-  ```
+    - Clone the project.
+  
+    ```
+    git clone https://github.com/iXenonN/YouTube-Music-Profile.git
+    ```
+  
+    - Find the cloned project file in local.
+  
+    ```
+    cd YouTube-Music-Profile
+    ```
 2. **Editing ytmusicapi credentials and Installing libraries**
 
-  - Open app.py with your favorite Python IDE.
-  
-  - Install the YouTube Music api. (thanks to sigma67 for creating this api)
-  
-  ```
-  pip install ytmusicapi
-  ```
-  
-  - Generate oauth.json for ytmusicapi.
-  
-  ```
-  ytmusicapi oauth
-  ```
-  - In the code change the 'YOUR OAUTH.JSON FILE' with your oauth.json file.
-  
-  ```
-  ytmusic = YTMusic('YOUR OAUTH.JSON FILE')
-  ```
+    - Open app.py with your favorite Python IDE.
     
-  - In the cloned file install requirements.txt.
-
-  ```
-  pip install -r requirements.txt
-  ```
+    - Install the YouTube Music api. (thanks to sigma67 for creating this api)
+    
+    ```
+    pip install ytmusicapi
+    ```
+    
+    - Generate oauth.json for ytmusicapi.
+    
+    ```
+    ytmusicapi oauth
+    ```
+    - In the code change the 'YOUR OAUTH.JSON FILE' with your oauth.json file.
+    
+    ```
+    ytmusic = YTMusic('YOUR OAUTH.JSON FILE')
+    ```
+      
+    - In the cloned file install requirements.txt.
+  
+    ```
+    pip install -r requirements.txt
+    ```
 
 3. **Firebase Project**
 
-   - Create a new project in Firebase.
-  
-   - Download your project's Firebase Admin SDK as node.js.
-  
-   - Copy your Firebase project url.
+     - Create a new project in Firebase.
+    
+     - Download your project's Firebase Admin SDK as node.js.
+    
+     - Copy your Firebase project url.
 
 4. **Editing Code With Firebase Credentials**
 
-  - Change the 'YOUR FIREBASE CRED JSON FILE' with your firebase admin sdk json file.
-  
-  ```
-  cred = credentials.Certificate('YOUR FIREBASE CRED JSON FILE')
-  ```
-  
-  - Paste your firebase project url to the 'YOUR FIREBASE PROJECT URL'.
-  
-  ```
-  firebase_admin.initialize_app(cred {
-      'storageBucket': 'YOUR FIREBASE PROJECT URL'
-  })
-  ```
-  
-  - Save and exit app.py.
+    - Change the 'YOUR FIREBASE CRED JSON FILE' with your firebase admin sdk json file.
+    
+    ```
+    cred = credentials.Certificate('YOUR FIREBASE CRED JSON FILE')
+    ```
+    
+    - Paste your firebase project url to the 'YOUR FIREBASE PROJECT URL'.
+    
+    ```
+    firebase_admin.initialize_app(cred {
+        'storageBucket': 'YOUR FIREBASE PROJECT URL'
+    })
+    ```
+    
+    - Save and exit app.py.
 
 5. **Chrome Extension**
 
-  - Install my chrome extension for checking the YouTube Music background status.
-
-  ```
-  Extension Link
-  ```
+    - Install my chrome extension for checking the YouTube Music background status.
+  
+    ```
+    Extension Link
+    ```
 
 6. **GitHub README.md modify**
 
-  - Open your profile readme.md by creating a repository with your GitHub username if you dont have already.
+    - Open your profile readme.md by creating a repository with your GitHub username if you dont have already.
+    
+    - Go to your Firebase project.
+    
+    - Click the Storage tab.
+    
+    - Click on listening-on-ytmusic.svg file and click name then copy the url to your svg file.
+    
+    - Paste the text below to your profile's readme.md file and save:
   
-  - Go to your Firebase project.
-  
-  - Click the Storage tab.
-  
-  - Click on listening-on-ytmusic.svg file and click name then copy the url to your svg file.
-  
-  - Paste the text below to your profile's readme.md file and save:
-
-  ```
-    #
-    ![What Am I Listening](your-copied-images-url)
-  ```
+    ```
+      #
+      ![What Am I Listening](your-copied-images-url)
+    ```
 
 7. **Creating the token for update-readme.yaml file**
 
-  - Go to your GitHub settings.
+    - Go to your GitHub settings.
+    
+    - Scroll and click Developer Settings.
+    
+    - Click Personal Acces Tokens and choose Tokens(classic).
+    
+    - Create a token gave acces to all and name whatever you want.
+    
+    - Copy your token.
   
-  - Scroll and click Developer Settings.
+    ## Never share your token
   
-  - Click Personal Acces Tokens and choose Tokens(classic).
-  
-  - Create a token gave acces to all and name whatever you want.
-  
-  - Copy your token.
-  
-  # Never share your token
-
-  - Go to settings in your profile's repository where readme.md file located.
-  
-  - Click secrets and variables.
-  
-  - Go to Actions tab.
-  
-  - Create a new repository secret named GH_TOKEN.
-  
-  - Paste your token to your repository secret named GH_TOKEN.
-  
-  - Save and its all done now.
+    - Go to settings in your profile's repository where readme.md file located.
+    
+    - Click secrets and variables.
+    
+    - Go to Actions tab.
+    
+    - Create a new repository secret named GH_TOKEN.
+    
+    - Paste your token to your repository secret named GH_TOKEN.
+    
+    - Save and its all done now.
 
 8. **Automate with GitHub Actions**
 
-  - After you complete editing your readme.md file save it and go to your profile's repository.
-  
-  - Create a new file named update-readme.yaml into your .github/workflows folder.
-  
-  - Paste the code below:
-  
-  ```
-  name: Update SVG Version
-  
-  on:
-    push:
-      branches:
-        - main
-    schedule:
-      - cron: '*/2 * * * *'  # Runs every 2 minutes
-    workflow_dispatch:
+    - After you complete editing your readme.md file save it and go to your profile's repository.
     
-  jobs:
-    update-version:
-      runs-on: ubuntu-latest
-      steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-  
-        
-  
-      - name: Increment SVG Version
-        id: increment_version
-        run: |
-          current_version=$(grep -oP '(?<=v=)\d+' README.md)
-          echo "Current version: $current_version"
-          new_version=$((current_version + 1))
-          echo "New version: $new_version"
-          sed -i "s/v=$current_version/v=$new_version/" README.md
+    - Create a new file named update-readme.yaml into your .github/workflows folder.
+    
+    - Paste the code below:
+    
+    ```
+    name: Update SVG Version
+    
+    on:
+      push:
+        branches:
+          - main
+      schedule:
+        - cron: '*/2 * * * *'  # Runs every 2 minutes
+      workflow_dispatch:
       
-  
-      - name: Commit Changes
-        run: |
-          git config --local user.email "YOUR GITHUB EMAIL"
-          git config --local user.name "YOUR REPOSITORY ADMIN USERNAME"
-          git add README.md
-          git commit -m "Increment SVG version to v${{ steps.increment_version.outputs.new_version }}"
-  
-      - name: Push Changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          branch: main
-  ```
+    jobs:
+      update-version:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v2
+    
+          
+    
+        - name: Increment SVG Version
+          id: increment_version
+          run: |
+            current_version=$(grep -oP '(?<=v=)\d+' README.md)
+            echo "Current version: $current_version"
+            new_version=$((current_version + 1))
+            echo "New version: $new_version"
+            sed -i "s/v=$current_version/v=$new_version/" README.md
+        
+    
+        - name: Commit Changes
+          run: |
+            git config --local user.email "YOUR GITHUB EMAIL"
+            git config --local user.name "YOUR REPOSITORY ADMIN USERNAME"
+            git add README.md
+            git commit -m "Increment SVG version to v${{ steps.increment_version.outputs.new_version }}"
+    
+        - name: Push Changes
+          uses: ad-m/github-push-action@v0.6.0
+          with:
+            github_token: ${{ secrets.GH_TOKEN }}
+            branch: main
+    ```
 
 9. **Run the code**
 
-  - Double click on app.py.
-  
-  - If you have completed all these steps successfully the code should work.
+    - Double click on app.py.
+    
+    - If you have completed all these steps successfully the code should work.
 
 
 <h2>🍰 Contribution Guidelines:</h2>
