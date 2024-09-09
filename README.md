@@ -314,8 +314,8 @@ Thank you for contributing! Your help is appreciated.
           CORS(app)
       ```
 
-### 📧 Still Having Issues?
-  - If you're still experiencing issues after trying these solutions, feel free to open an issue or contact me directly via email. [![Gmail](https://img.shields.io/badge/alikeremergen13%40gmail.com-grey?logo=Gmail)
+## 📧 Still Having Issues?
+  - If you're still experiencing issues after trying these solutions, feel free to open an issue or contact me directly via email. ![Gmail](https://img.shields.io/badge/alikeremergen13%40gmail.com-grey?logo=Gmail)
   
   
 <h2>💻 Built with</h2>
