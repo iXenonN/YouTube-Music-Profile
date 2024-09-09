@@ -8,6 +8,19 @@
   - • kittinan [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/kittinan) 
   - • natemoo-re [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/natemoo-re) 
   - • Thanks to sigma67 [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/sigma67)  for creating the unoffical YouTube Music api.
+
+## 🔒 Privacy Policy
+
+This project respects your privacy. **No personal data is collected, stored, or shared** at any time while using this project.
+
+### What This Means:
+- The project **does not collect** any user data.
+- The project **does not store** any data locally or remotely.
+- The project **does not share** any information with third parties.
+
+This ensures that your privacy is fully protected while using this project.
+
+If you have any questions or concerns regarding privacy, feel free to reach out via the contact information provided in this repository.
  
 <h2>🧐 Features</h2>
 
