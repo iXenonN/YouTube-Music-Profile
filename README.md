@@ -119,7 +119,7 @@ Here're some of the project's best features:
     
     - Copy your token.
   
-    ## Never share your token
+    **Never share your token**
   
     - Go to settings in your profile's repository where readme.md file located.
     
