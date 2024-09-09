@@ -294,7 +294,7 @@ Thank you for contributing! Your help is appreciated.
 ### ❌ Issue: `'ytmusicapi' is not recognized as an internal or external command, operable program or batch file.`
   - **Cause:** This error occurs when your system cant see the ytmusicapi library (i think).
   
-  - **Solution:** For me i use windows 11 and i had this issue too but luckily i had a linux installed virtual machine and i executed this command from linux and it worked, so you can try a diffrent operating system.
+  - **Solution:** For me i use windows 11 and i had this issue too but luckily i had a linux installed virtual machine and i executed this command from linux and it worked, so you can try a diffrent operating system and transfer the oauth.json file into your main operating system.
 
 
 ### ❌ Issue: `google.api_core.exceptions.NotFound: 404 POST [LINK]`
