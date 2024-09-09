@@ -344,4 +344,4 @@ This project is licensed under the MIT license.
 
 <h2>💖Like my work?</h2>
 
-Hello if you are reading here right now it means you want to support me. Thank you very much for this kind offer but since I am under 18 years old I cannot work with buy me a coffe type sites so the best support for me right now would be to follow my github. Thank you :)
+Hello if you are reading here right now it means you want to support me. Thank you very much for this kind offer but i want to grow up my github profile so best support for me right now would be to follow my github. Thank you :)
