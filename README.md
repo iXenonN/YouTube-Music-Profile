@@ -266,7 +266,7 @@ Technologies used in the project:
 
 <h2>🛡️ License:</h2>
 
-This project is licensed under the MIT license
+This project is licensed under the MIT license.
 
 <h2>💖Like my work?</h2>
 
