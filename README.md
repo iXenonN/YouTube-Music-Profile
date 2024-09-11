@@ -2,7 +2,8 @@
 
 <p id="description">This project displays the song you are currently listening to on YouTube Music in real-time on your GitHub profile.</p>
 
-<p align="center"><img src="https://img.shields.io/badge/Currently-Working-brightgreen" alt="shields">  <img src="https://img.shields.io/badge/Version-1.1-blue" alt="shields"> <img src="https://img.shields.io/chrome-web-store/rating/bimommhpekpddlbmaaljdkcgcfclpkfo" alt="shields"> <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/iXenonN/YouTube-Music-Profile/total?label=Project%20Downloads">
+<p align="center"><img src="https://img.shields.io/badge/Currently-Working-brightgreen" alt="shields">  <img src="https://img.shields.io/badge/Version-1.1-blue" alt="shields"><img alt="Chrome Web Store Rating" src="https://img.shields.io/chrome-web-store/rating/bimommhpekpddlbmaaljdkcgcfclpkfo?label=Extension%20Rating">
+ <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/iXenonN/YouTube-Music-Profile/total?label=Project%20Downloads">
 </p
 
 
