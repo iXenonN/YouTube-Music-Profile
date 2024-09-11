@@ -2,9 +2,9 @@
 
 <p id="description">This project displays the song you are currently listening to on YouTube Music in real-time on your GitHub profile.</p>
 
-<p align="center"><img src="https://img.shields.io/badge/Currently-Working-brightgreen" alt="shields">  <img src="https://img.shields.io/badge/Version-1.1-blue" alt="shields"></p>
+<p align="center"><img src="https://img.shields.io/badge/Currently-Working-brightgreen" alt="shields">  <img src="https://img.shields.io/badge/Version-1.1-blue" alt="shields">Extension Rating:<img src="https://img.shields.io/chrome-web-store/rating/bimommhpekpddlbmaaljdkcgcfclpkfo" alt="shields"></p>
 
-<img src="https://img.shields.io/chrome-web-store/rating/bimommhpekpddlbmaaljdkcgcfclpkfo" alt="shields">
+
 
 ## Inspired From:
   - • kittinan [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=GitHub)](https://github.com/kittinan) 
