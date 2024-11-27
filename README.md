@@ -49,7 +49,7 @@ Here're some of the project's best features:
     ```
     cd YouTube-Music-Profile
     ```
-2. **Editing ytmusicapi credentials and Installing libraries**
+2. **Installing libraries and requirements**
 
     - Open app.py with your favorite Python IDE.
     
@@ -59,38 +59,41 @@ Here're some of the project's best features:
     pip install ytmusicapi
     ```
     
-    <h3>- Generate browser.json for ytmusicapi. ("oauth-based authentication has been disabled for the web client by Google") </h3>
+    - In the cloned file install requirements.txt.
+    ```
+    pip install -r requirements.txt
+    ```
+    
+3. **Editing ytmusicapi credentials and Generate browser.json for ytmusicapi. ("oauth-based authentication has been disabled for the web client by Google")**
 
-    - 1. Open a new tab from your browser (Firefox recommended)
+   - Open a new tab from your browser. (Firefox recommended)
      
-    - 2. Open the developer tools (Ctrl-Shift-I) and select the “Network” tab
+   - Open the developer tools (Ctrl-Shift-I) and select the “Network” tab.
      
-    - 3. Go to https://music.youtube.com and ensure you are logged in
+   - Go to https://music.youtube.com and ensure you are logged in.
      
-    - 4. Find an authenticated POST request. The simplest way is to filter by '/browse' using the search bar of the developer tools. If you don’t see the request, try scrolling down a bit or clicking on the library button in the top bar.
-     
-         <details open>
-  <summary>Firefox</summary>
-  Verify that the request looks like this: Status 200, Method POST, Domain music.youtube.com, File 
+   - Find an authenticated POST request. The simplest way is to filter by '/browse' using the search bar of the developer tools. If you don’t see the request, try scrolling down a bit or clicking on the library button in the top bar.
   
-  ``` /browse ```
-</details>
+   - For Firefox verify that the request looks like this: Status 200, Method POST, Domain music.youtube.com, File  ``` browse?...  ```
+     - Copy the request headers. (right click > copy > copy request headers)
+    
+   - For Chromium (Chrome/Edge) verify that the request looks like this: Status 200, Name  ``` browse?... ```
+     - Click on the Name of any matching request. In the “Headers” tab, scroll to the section “Request headers” and copy everything starting from “accept: */*” to the end of the section.
 
+   - Then, open a console do  ```cd Desktop``` and call.
     ```
     ytmusicapi browser
     ```
+   - Paste the request headers that you copied before to the terminal input and click theese keys respectively.
+   ```
+   Enter, Ctrl+Z, Enter
+   ```
+   - This command will create a browser.json file in your Desktop.
     
-    
-    - In the code change the 'YOUR BROWSER.JSON FILE' with your oauth.json file.
+   - In the code change the 'YOUR BROWSER.JSON FILE' with your browser.json file.
     
     ```
     ytmusic = YTMusic('YOUR BROWSER.JSON FILE')
-    ```
-      
-    - In the cloned file install requirements.txt.
-  
-    ```
-    pip install -r requirements.txt
     ```
 
 3. **Firebase Project**
