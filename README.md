@@ -4,6 +4,7 @@
 
 <p align="center"><img src="https://img.shields.io/badge/Currently-Working-brightgreen" alt="shields">  <img src="https://img.shields.io/badge/Version-1.2-blue" alt="shields"> <img alt="Chrome Web Store Rating" src="https://img.shields.io/chrome-web-store/rating/bimommhpekpddlbmaaljdkcgcfclpkfo?label=Extension%20Rating">
  <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/iXenonN/YouTube-Music-Profile/total?label=Project%20Downloads">
+ <img alt="Static Badge" src="https://img.shields.io/badge/Last_Update-11%2F27%2F24-white">
 </p
 
 
