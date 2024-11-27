@@ -307,10 +307,10 @@ Thank you for contributing! Your help is appreciated.
   
   ```
 
-### ❌ Issue: `FileNotFoundError: [Errno 2] No such file or directory: 'oauth.json'`
-  - **Cause:** This error occurs when the project cannot find the oauth.json file in the expected directory (It can be ).
+### ❌ Issue: `FileNotFoundError: [Errno 2] No such file or directory: 'browser.json'`
+  - **Cause:** This error occurs when the project cannot find the browser.json file in the expected directory (It can be ).
   
-  - **Solution:** Make sure that oauth.json exists in the project's root directory. If it's missing, you can create with the command below (This error may also apply to your firebase-sdk.json. If you see this error message, it is useful       to check your firebase-sdk.json path as well.):
+  - **Solution:** Make sure that browser.json exists in the project's root directory. If it's missing, you can create with the command below (This error may also apply to your firebase-sdk.json. If you see this error message, it is useful       to check your firebase-sdk.json path as well.):
       ```
       ytmusicapi oauth
       ```
