@@ -312,7 +312,7 @@ Thank you for contributing! Your help is appreciated.
   
   - **Solution:** Make sure that browser.json exists in the project's root directory. If it's missing, you can create with the command below (This error may also apply to your firebase-sdk.json. If you see this error message, it is useful       to check your firebase-sdk.json path as well.):
       ```
-      ytmusicapi oauth
+      ytmusicapi browser
       ```
 
 ### ❌ Issue: `'ytmusicapi' is not recognized as an internal or external command, operable program or batch file.`
