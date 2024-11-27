@@ -15,7 +15,7 @@ import time
 import urllib
 from ytmusicapi import YTMusic
 
-ytmusic = YTMusic('YOUR OAUTH.JSON FILE')
+ytmusic = YTMusic('YOUR BROWSER.JSON FILE')
 
 cred = credentials.Certificate('YOUR FIREBASE CRED JSON FILE')
 firebase_admin.initialize_app(cred, {
