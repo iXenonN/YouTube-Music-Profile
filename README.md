@@ -59,15 +59,17 @@ Here're some of the project's best features:
     pip install ytmusicapi
     ```
     
-    - Generate oauth.json for ytmusicapi.
+   ***- Generate browser.json for ytmusicapi. ("oauth-based authentication has been disabled for the web client by Google")***
     
     ```
-    ytmusicapi oauth
+    ytmusicapi browser
     ```
-    - In the code change the 'YOUR OAUTH.JSON FILE' with your oauth.json file.
+    
+    
+    - In the code change the 'YOUR BROWSER.JSON FILE' with your oauth.json file.
     
     ```
-    ytmusic = YTMusic('YOUR OAUTH.JSON FILE')
+    ytmusic = YTMusic('YOUR BROWSER.JSON FILE')
     ```
       
     - In the cloned file install requirements.txt.
