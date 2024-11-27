@@ -59,8 +59,23 @@ Here're some of the project's best features:
     pip install ytmusicapi
     ```
     
-   ***- Generate browser.json for ytmusicapi. ("oauth-based authentication has been disabled for the web client by Google")***
-    
+    <h3>- Generate browser.json for ytmusicapi. ("oauth-based authentication has been disabled for the web client by Google") </h3>
+
+    - 1. Open a new tab from your browser (Firefox recommended)
+     
+    - 2. Open the developer tools (Ctrl-Shift-I) and select the “Network” tab
+     
+    - 3. Go to https://music.youtube.com and ensure you are logged in
+     
+    - 4. Find an authenticated POST request. The simplest way is to filter by '/browse' using the search bar of the developer tools. If you don’t see the request, try scrolling down a bit or clicking on the library button in the top bar.
+     
+         <details open>
+  <summary>Firefox</summary>
+  Verify that the request looks like this: Status 200, Method POST, Domain music.youtube.com, File 
+  
+  ``` /browse ```
+</details>
+
     ```
     ytmusicapi browser
     ```
