@@ -7,4 +7,4 @@ numpy==1.26.4
 pillow==10.4.0
 pybase64==1.4.0
 requests==2.32.3
-ytmusicapi==1.8.0
+ytmusicapi==1.8.2
