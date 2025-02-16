@@ -381,5 +381,5 @@ This project is licensed under the MIT license.
 <h2>💖Like my work?</h2>
 
 Hello if you are reading here right now it means you want to support me. Thank you very much for this kind offer, if you want to support financially, you can support me through my buy me a coffee link:
-[![BuyMeACoffe](https://img.shields.io/badge/GitHub-black?style=flat&logo=BuyMeACoffe)](buymeacoffee.com/ixenon) 
+[![BuyMeACoffe](https://img.shields.io/badge/buy_me_a_coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](buymeacoffee.com/ixenon) 
 Apart from that, if you follow me on gtihub and star my project, you will be a great support, thank you :)
